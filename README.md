@@ -52,7 +52,7 @@ Here are a few examples from the collection:
 
 1. Clone the repository:
    ```bash
-  git clone https://github.com/mhd-humraz/origin-media.git
+   git clone https://github.com/mhd-humraz/origin-media.git
    cd origin-media
 
   # Future Plans   
