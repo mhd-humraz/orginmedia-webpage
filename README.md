@@ -70,13 +70,13 @@ Here are a few examples from the collection:
   # Designed & Developed by
 
   Humraz  
- # Founder, ORIGIN MEDIA
- # BCA Student at MES M.K. Mackar Pillay College
+  Founder, ORIGIN MEDIA
+  BCA Student at MES M.K. Mackar Pillay College
 
  # Contact
  For custom poster designs, partnerships, or questions, reach out at:
 
-# originmedia24@gmail.com
-# Instagram: @origin.media
+ originmedia24@gmail.com
+ Instagram: @origin.media
 
 
