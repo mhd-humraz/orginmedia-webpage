@@ -52,7 +52,7 @@ Here are a few examples from the collection:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/origin-media.git
+  git clone https://github.com/mhd-humraz/origin-media.git
    cd origin-media
 
   # Future Plans   
@@ -70,13 +70,15 @@ Here are a few examples from the collection:
   # Designed & Developed by
 
   Humraz  
-  Founder, ORIGIN MEDIA
-  BCA Student at MES M.K. Mackar Pillay College
+  Founder of ORIGIN MEDIA
+  
+  BCA Student @ MEScas
 
  # Contact
  For custom poster designs, partnerships, or questions, reach out at:
 
  originmedia24@gmail.com
- Instagram: @origin.media
+ 
+ Instagram:[ @origin.media](https://www.instagram.com/orgin_media?igsh=MTlwc2N4eTZmN3Bpdw==)
 
 
