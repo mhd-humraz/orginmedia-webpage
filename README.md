@@ -16,9 +16,13 @@ Built using HTML, CSS, and JavaScript – the website is fast, responsive, and f
 ## 📁 Project Structure
 
  ├── index.html # Home page displaying all posters
+
  ├── cart.html # Cart page to view and manage selected items
+
  ├── style.css # External stylesheet for layout and design
+ 
  ├── script.js # JavaScript logic for cart functionality
+
  ├── images/ # Folder containing all poster images 
 
 
