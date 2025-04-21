@@ -42,70 +42,122 @@
 <div class="slider-container">
   <button class="slider-btn left" onclick="slideLeft('slider1')">&#8249;</button>
  
-    <div class="product-list" id="slider1">
-      <div class="product">
-        <img src="images/poster1.jpeg" alt="Poster 1" />
-        <h3>Abstract Nature</h3>
-        <p>Rs. 199</p>
-        <button onclick="addToCart('Abstract Nature', 199)">Add to Cart</button>
-      </div>
+     
+<div class="product">
+  <img src="images/poster1.jpeg" alt="Poster 1" />
+  <h3>Abstract Nature</h3>
+  <p>Select Size:</p>
+  <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div>
 
-      <div class="product">
-        <img src="images/poster2.jpeg" alt="Poster 2" />
-        <h3>City Vibes</h3>
-        <p>Rs. 249</p>
-        <button onclick="addToCart('City Vibes', 249)">Add to Cart</button>
-      </div>
 
-      <div class="product">
-        <img src="images/poster3.jpeg" alt="Poster 3" />
-        <h3>Minimalist Waves</h3>
-        <p>Rs. 179</p>
-        <button onclick="addToCart('Minimalist Waves', 179)">Add to Cart</button>
-      </div>
+      <!-- Inside each .product div, update it like this: -->
+<div class="product">
+  <img src="images/poster2.jpeg" alt="Poster 2" />
+  <h3>Abstract Nature</h3>
+  <p>Select Size:</p>
+  <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div>
 
-      <div class="product">
-        <img src="images/poster4.jpeg" alt="Poster 4" />
-        <h3>Mountain Escape</h3>
-        <p>Rs. 299</p>
-        <button onclick="addToCart('Mountain Escape', 299)">Add to Cart</button>
-      </div>
 
-      <div class="product">
-        <img src="images/poster5.jpeg" alt="Poster 5" />
-        <h3>Neon Drive</h3>
-        <p>Rs. 299</p>
-        <button onclick="addToCart('Neon Drive', 299)">Add to Cart</button>
-      </div>
+    <!-- Inside each .product div, update it like this: -->
+<div class="product">
+  <img src="images/poster3.jpeg" alt="Poster 3" />
+  <h3>Abstract Nature</h3>
+  <p>Select Size:</p>
+  <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div>
+
+
+     <!-- Inside each .product div, update it like this: -->
+<div class="product">
+  <img src="images/poster4.jpeg" alt="Poster 4" />
+  <h3>Abstract Nature</h3>
+  <p>Select Size:</p>
+  <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div>
+
+
+ 
+<div class="product">
+  <img src="images/poster1.jpeg" alt="Poster 1" />
+  <h3>Abstract Nature</h3>
+  <p>Select Size:</p>
+  <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div>
+
 
       <div class="product">
         <img src="images/poster6.jpeg" alt="Poster 6" />
         <h3>Skyline Dreams</h3>
         <p>Rs. 299</p>
-        <button onclick="addToCart('Skyline Dreams', 299)">Add to Cart</button>
+       <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
       </div>
 
       <div class="product">
         <img src="images/poster7.jpeg" alt="Poster 7" />
         <h3>Retro Pixels</h3>
         <p>Rs. 299</p>
-        <button onclick="addToCart('Retro Pixels', 299)">Add to Cart</button>
+     <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
       </div>
-
       <div class="product">
         <img src="images/poster8.jpeg" alt="Poster 8" />
         <h3>Cyber Samurai</h3>
         <p>Rs. 299</p>
-        <button onclick="addToCart('Cyber Samurai', 299)">Add to Cart</button>
+       <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
       </div>
-
       <div class="product">
         <img src="images/poster9.jpeg" alt="Poster 9" />
         <h3>Ocean Calm</h3>
         <p>Rs. 299</p>
-        <button onclick="addToCart('Ocean Calm', 299)">Add to Cart</button>
-      </div>
-    </div>
+   <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div
+ </div>
 
  <button class="slider-btn right" onclick="slideRight('slider1')">&#8250;</button>
   </div>
@@ -123,65 +175,112 @@
         <img src="images/poster1.jpeg" alt="Poster 1" />
         <h3>Abstract Nature</h3>
         <p>Rs. 199</p>
-        <button onclick="addToCart('Abstract Nature', 199)">Add to Cart</button>
-      </div>
-
+   <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+     </div>
+ 
       <div class="product">
         <img src="images/poster2.jpeg" alt="Poster 2" />
         <h3>City Vibes</h3>
         <p>Rs. 249</p>
-        <button onclick="addToCart('City Vibes', 249)">Add to Cart</button>
+    <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
       </div>
 
+ 
       <div class="product">
         <img src="images/poster3.jpeg" alt="Poster 3" />
         <h3>Minimalist Waves</h3>
         <p>Rs. 179</p>
-        <button onclick="addToCart('Minimalist Waves', 179)">Add to Cart</button>
+  <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
       </div>
 
+ 
       <div class="product">
         <img src="images/poster4.jpeg" alt="Poster 4" />
         <h3>Mountain Escape</h3>
         <p>Rs. 299</p>
-        <button onclick="addToCart('Mountain Escape', 299)">Add to Cart</button>
+  <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
       </div>
 
       <div class="product">
         <img src="images/poster5.jpeg" alt="Poster 5" />
         <h3>Neon Drive</h3>
         <p>Rs. 299</p>
-        <button onclick="addToCart('Neon Drive', 299)">Add to Cart</button>
-      </div>
+    <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div>
 
       <div class="product">
         <img src="images/poster6.jpeg" alt="Poster 6" />
         <h3>Skyline Dreams</h3>
         <p>Rs. 299</p>
-        <button onclick="addToCart('Skyline Dreams', 299)">Add to Cart</button>
-      </div>
+     <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div>
 
       <div class="product">
         <img src="images/poster7.jpeg" alt="Poster 7" />
         <h3>Retro Pixels</h3>
         <p>Rs. 299</p>
-        <button onclick="addToCart('Retro Pixels', 299)">Add to Cart</button>
-      </div>
+   <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div>
 
       <div class="product">
         <img src="images/poster8.jpeg" alt="Poster 8" />
         <h3>Cyber Samurai</h3>
         <p>Rs. 299</p>
-        <button onclick="addToCart('Cyber Samurai', 299)">Add to Cart</button>
-      </div>
+    <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div>
 
       <div class="product">
         <img src="images/poster9.jpeg" alt="Poster 9" />
         <h3>Ocean Calm</h3>
         <p>Rs. 299</p>
-        <button onclick="addToCart('Ocean Calm', 299)">Add to Cart</button>
-      </div>
-    </div>
+     <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+</div>
+  </div>
 
  <button class="slider-btn right" onclick="slideRight('slider2')">&#8250;</button>
 
