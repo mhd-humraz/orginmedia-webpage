@@ -9,126 +9,83 @@
 </head>
 <body>
   <header>
-    <h1 style = "color:white; text-align:center;">ORIGIN MEDIA</h1>
-  </header>
+    <h1>ORIGIN MEDIA</h1>  
+  </header> 
+
+  <section class="hero">
+    <h2>Welcome to Origin Media!</h2>
+    <p>Explore and order stunning wall posters</p>
+  </section>
 
   <section class="products">
-    <h2> car Posters</h2>
-    
+    <h2>Our Posters</h2>
+    <div class="product-list">
       <div class="product">
         <img src="images/poster1.jpeg" alt="Poster 1" />
-        <h3>Abstract Nature</h3>         
-   <select onchange="updatePrice(this)">
-    <option value="69">A4 - ₹69</option>
-    <option value="89">A3 - ₹89</option>
-  </select>
-  <p class="price">Rs. 69</p>
-  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
-     </div>
-    
-        <div class="product">
-        <img src="images/poster2.jpeg" alt="Poster 1" />
-        <h3>Abstract Nature</h3>         
-   <select onchange="updatePrice(this)">
-    <option value="69">A4 - ₹69</option>
-    <option value="89">A3 - ₹89</option>
-  </select>
-  <p class="price">Rs. 69</p>
-  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
-     </div>
-      
-          <div class="product">
-        <img src="images/poster3.jpeg" alt="Poster 1" />
-        <h3>Abstract Nature</h3>         
-   <select onchange="updatePrice(this)">
-    <option value="69">A4 - ₹69</option>
-    <option value="89">A3 - ₹89</option>
-  </select>
-  <p class="price">Rs. 69</p>
-  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
-     </div>
-      
-            <div class="product">
-        <img src="images/poster4.jpeg" alt="Poster 1" />
-        <h3>Abstract Nature</h3>         
-   <select onchange="updatePrice(this)">
-    <option value="69">A4 - ₹69</option>
-    <option value="89">A3 - ₹89</option>
-  </select>
-  <p class="price">Rs. 69</p>
-  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
-     </div>
-      
-            <div class="product">
-        <img src="images/poster5.jpeg" alt="Poster 1" />
-        <h3>Abstract Nature</h3>         
-   <select onchange="updatePrice(this)">
-    <option value="69">A4 - ₹69</option>
-    <option value="89">A3 - ₹89</option>
-  </select>
-  <p class="price">Rs. 69</p>
-  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
-     </div>
-      
-       <div class="product">
-        <img src="images/poster6.jpeg" alt="Poster 1" />
         <h3>Abstract Nature</h3>
-         
-   <select onchange="updatePrice(this)">
-    <option value="69">A4 - ₹69</option>
-    <option value="89">A3 - ₹89</option>
-  </select>
-  <p class="price">Rs. 69</p>
-  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
-     </div>
-
-            <div class="product">
-        <img src="images/poster7.jpeg" alt="Poster 1" />
-        <h3>Abstract Nature</h3>         
-   <select onchange="updatePrice(this)">
-    <option value="69">A4 - ₹69</option>
-    <option value="89">A3 - ₹89</option>
-  </select>
-  <p class="price">Rs. 69</p>
-  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
-     </div>
-
-            <div class="product">
-        <img src="images/poster8.jpeg" alt="Poster 1" />
-        <h3>Abstract Nature</h3>         
-   <select onchange="updatePrice(this)">
-    <option value="69">A4 - ₹69</option>
-    <option value="89">A3 - ₹89</option>
-  </select>
-  <p class="price">Rs. 69</p>
-  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
-     </div>
-      
-            <div class="product">
-        <img src="images/poster9.jpeg" alt="Poster 1" />
-        <h3>Abstract Nature</h3>         
-   <select onchange="updatePrice(this)">
-    <option value="69">A4 - ₹69</option>
-    <option value="89">A3 - ₹89</option>
-  </select>
-  <p class="price">Rs. 69</p>
-  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
-     </div>
-      
-            <div class="product">
-        <img src="images/poster10.jpeg" alt="Poster 1" />
-        <h3>Abstract Nature</h3>         
-   <select onchange="updatePrice(this)">
-    <option value="69">A4 - ₹69</option>
-    <option value="89">A3 - ₹89</option>
-  </select>
-  <p class="price">Rs. 69</p>
-  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
-     </div>
-      
+        <p>Rs. 89</p>
+        <button onclick="addToCart('Abstract Nature', 89)">Add to Cart</button>
+      </div>
+    
+      <div class="product">
+        <img src=" images/poster2.jpeg" alt="Poster 2" />
+        <h3>City Vibes</h3>
+        <p>Rs. 89</p>
+        <button onclick="addToCart('City Vibes', 89)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/poster3.jpeg" alt="Poster 3" />
+        <h3>Minimalist Waves</h3>
+        <p>Rs. 179</p>
+        <button onclick="addToCart('Minimalist Waves', 179)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/poster4.jpeg" alt="Poster 4" />
+        <h3>Mountain Escape</h3>
+        <p>Rs. 299</p>
+        <button onclick="addToCart('Mountain Escape', 299)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/poster5.jpeg" alt="Poster 5" />
+        <h3>Retro Vibes</h3>
+        <p>Rs. 199</p>
+        <button onclick="addToCart('Retro Vibes', 199)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/poster6.jpeg" alt="Poster 6" />
+        <h3>Dreamy Sky</h3>
+        <p>Rs. 229</p>
+        <button onclick="addToCart('Dreamy Sky', 229)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/poster7.jpeg" alt="Poster 7" />
+        <h3>Nature Minimal</h3>
+        <p>Rs. 189</p>
+        <button onclick="addToCart('Nature Minimal', 189)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/poster8.jpeg" alt="Poster 8" />
+        <h3>Sunset Path</h3>
+        <p>Rs. 209</p>
+        <button onclick="addToCart('Sunset Path', 209)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/poster9.jpeg" alt="Poster 9" />
+        <h3>Space Dreams</h3>
+        <p>Rs. 259</p>
+        <button onclick="addToCart('Space Dreams', 259)">Add to Cart</button>
+      </div>
+       <div class="product">
+        <img src=" images/poster10.jpeg" alt="Poster 2" />
+        <h3>City Vibes</h3>
+        <p>Rs. 249</p>
+        <button onclick="addToCart('City Vibes', 249)">Add to Cart</button>
+      </div>
     </div>
   </section>
-  <script src="script.js"></script>
 
-    </body>
+   
+
+  <script src="script.js"></script>
+</body>
 </html>
