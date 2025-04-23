@@ -46,6 +46,17 @@
         <p>Rs. 199</p>
         <button onclick="addToCart('Retro Vibes', 199)">Add to Cart</button>
       </div>
+       <div class="product">
+        <img src="images/poster1.jpeg" alt="Poster 1" />
+        <h3>Abstract Nature</h3>
+         
+   <select onchange="updatePrice(this)">
+    <option value="69">A4 - ₹69</option>
+    <option value="89">A3 - ₹89</option>
+  </select>
+  <p class="price">Rs. 69</p>
+  <button onclick="addToCartWithSize(this, 'Abstract Nature')">Add to Cart</button>
+     </div>
     </div>
   </section>
   <script src="script.js"></script>
