@@ -6,8 +6,9 @@
   <title>ORIGIN MEDIA - Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    function addToCart(name, price) {
-      alert(`🛒 Added "${name}" to cart for Rs. ${price}`);
+    function addToCart(name, size) {
+      const price = size === 'A4' ? 69 : 89;
+      alert(`🛒 Added "${name}" (${size}) to cart for Rs. ${price}`);
     }
   </script>
 </head>
@@ -21,128 +22,217 @@
   <main class="p-6 max-w-7xl mx-auto">
     <h2 class="text-2xl font-semibold text-center my-6 text-black">Our Posters</h2>
     <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      <!-- Poster 1 -->
+
+      <!-- Sample Poster -->
       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
         <img src="images/poster1.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
           <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('Abstract Nature', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-      <!-- Poster 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster2.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster2.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster3.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster3.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster4.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster4.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster5.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster5.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-
-       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster6.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster6.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-
-       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster7.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster7.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-
-       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster8.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster8.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-
-       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster9.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster9.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-
-
-       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster10.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster10.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-
-
-       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster11.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster11.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
 
-
-       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
-        <img src="images/poster12.jpeg" alt="City Vibes" class="w-full h-64 object-cover">
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster12.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold text-black">City Vibes</h3>
-          <p class="text-gray-700">Rs. 89</p>
-          <button onclick="addToCart('City Vibes', 89)" class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
         </div>
       </div>
-      <!-- Continue the same structure for all other posters -->
+
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster13.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+        </div>
+      </div>
+
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster14.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+        </div>
+      </div>
+
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster15.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+        </div>
+      </div>
+
+         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border">
+        <img src="images/poster16.jpeg" alt="Abstract Nature" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-black">Abstract Nature</h3>
+          <label for="size" class="block text-gray-700 mt-2">Choose Size:</label>
+          <select id="size-1" class="mt-1 w-full px-3 py-2 border rounded">
+            <option value="A4">A4 - Rs. 69</option>
+            <option value="A3">A3 - Rs. 89</option>
+          </select>
+          <button onclick="addToCart('Abstract Nature', document.getElementById('size-1').value)" class="mt-3 w-full px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Add to Cart</button>
+        </div>
+      </div>
     </div>
   </main>
 
 </body>
 </html>
-
