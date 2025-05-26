@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - Origin Media</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .cart-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+      border-radius: 12px;
+    }
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    .cart-item img {
+      width: 80px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .purchase-section {
+      margin-top: 20px;
+      text-align: center;
+    }
+    #purchaseBtn {
+      background-color: #1d1d1d;
+      color: white;
+      padding: 10px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #purchaseBtn:hover {
+      background-color: #333;
+    }
+    #purchaseMsg {
+      display: none;
+      color: green;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cart-container">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h3>Total: ₹<span id="totalPrice">0</span></h3>
+
+    <div class="purchase-section">
+      <button id="purchaseBtn">Purchase</button>
+      <p id="purchaseMsg">🎉 Thank you for your purchase!</p>
+    </div>
+  </div>
+
+  <script>
+    const cartItemsDiv = document.getElementById("cartItems");
+    const totalPriceSpan = document.getElementById("totalPrice");
+    const purchaseBtn = document.getElementById("purchaseBtn");
+    const purchaseMsg = document.getElementById("purchaseMsg");
+
+    // Load cart items from localStorage
+    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    let total = 0;
+    cartItems.forEach(item => {
+      const itemDiv = document.createElement("div");
+      itemDiv.classList.add("cart-item");
+
+      itemDiv.innerHTML = `
+        <div>
+          <h4>${item.name}</h4>
+          <p>₹${item.price}</p>
+        </div>
+        <img src="${item.image}" alt="${item.name}" />
+      `;
+
+      total += item.price;
+      cartItemsDiv.appendChild(itemDiv);
+    });
+
+    totalPriceSpan.textContent = total;
+
+    purchaseBtn.addEventListener("click", () => {
+      localStorage.removeItem("cartItems");
+      purchaseMsg.style.display = "block";
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>
